@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Prayer Requests",
+    "description": "Share anonymous, private, or public prayer requests to your network of believers.",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Meal Trains",
+    "description": "Life brings challenges that make meal preparations hard. Ask your brothers and sisters for a meal train. Or support your community by joining a meal train.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Service Requests",
+    "description": "Ask or provide help around the house, getting a ride, or doing one-time projects. Maybe you have a truck, a free Saturday, and can help those in your church move something.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

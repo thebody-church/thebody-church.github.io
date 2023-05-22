@@ -1,49 +1,46 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+baseurl: '/'
+permalink: pretty
+title: 'The Body'
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: The Body
-email: mark@kockerbeck.com
-description: >- # this means to ignore newlines until "baseurl:"
-  The Body is a service to help connect the needs of existing church communities. The Body is a text-based messaging platform and web portal for Christians to find opportunities to serve their fellow believers, as well as a place for those in need to ask for help. The Body focuses on existing local church communities and uses invite codes to help connect individuals to local church hubs.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thebody-church.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thebody-church
-github_username:  thebody-church
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "32px"
+  desktop_width: "120px"
 
-# Build settings
-markdown: kramdown
-#theme: minima
-remote_theme: pages-themes/cayman@v0.2.0
+home: 
+  limit_services: 6
+
+collections:
+  services:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "app"
+    values:
+      layout: "app"
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+  - jekyll-environment-variables
 
-github:
-    is_project_page: false
-
-show_downloads: false
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
