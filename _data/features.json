@@ -1,7 +1,16 @@
 [
   {
+    "title": "Your Church",
+    "description": "The Body is designed to safely and easily connect members of your existing church. Have you wondered if someone in your church is in need?",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
     "title": "Prayer Requests",
-    "description": "Share anonymous, private, or public prayer requests to your network of believers.",
+    "description": "Share anonymous, private, or public prayer requests to your network of believers. Or look at open prayer requests across your church and see how you can help.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
